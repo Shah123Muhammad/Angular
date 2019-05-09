@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app='mainApp'>
+<head>
+	<title>Coaching Institue</title>
+	<script src="../angular.js"></script>
+	<script src="route.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body >
+
+      <div class="container">
+        <div class="header">
+        	<h1 id="title"> Tech Institute </h1> 	
+        </div>
+
+        <div class="sidebar">
+      	  <ul>
+      	  	<li><a href="#/courses">Courses</a></li>
+      	  	<li><a href="#/faculity">Faculity</a></li>
+      	  	<li><a href="#/about">About us</a></li>
+      	  	<li><a href="#/contact">Contact us</a></li>
+      	  </ul>
+        </div>
+
+        <div class="content_area">
+           <ng-view></ng-view>	 
+        </div>
+      </div>
+      
+</body>
+</html>

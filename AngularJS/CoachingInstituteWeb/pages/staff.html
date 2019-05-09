@@ -1,0 +1,16 @@
+<div class="staff" ng-controller="staff_con">
+	<h1 style="text-align:center;">Staff</h1>
+
+	<table>		
+		<tr>
+			<th>Name</th>
+			<th>Qualification</th>
+		</tr>
+        <tr ng-repeat="s in staff">
+          <td>{{s.name}}</td>
+          <td>{{s.qualification}}</td>       	
+        </tr>
+	</table>
+</div>
+
+

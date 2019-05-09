@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="todo_mod">
+<head>
+	<title>To do List</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="../angular.js"></script>
+	<script src="script.js"></script>
+</head>
+<body ng-controller="todo_ctr">
+
+         <div class="container">
+         	<h1>To do List</h1>
+         	<ul ng-repeat="l in list">
+         		<li>{{ l }} <span ng-click="delete($index)" style="float:right;"> &times; </span></li><hr>         		
+         	</ul> 
+ 
+             <input type="text" placeholder="Enter new Task" ng-model="new">
+             <input type="button" name="" value="Add" ng-click="addItem()">
+
+         </div>
+
+</body>
+</html>

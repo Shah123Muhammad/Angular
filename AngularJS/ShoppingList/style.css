@@ -1,0 +1,38 @@
+.container{
+	width:550px;
+	margin:auto;
+	background: lightblue;
+	padding: 20px;
+}
+#title{
+	 text-align: center;
+	 font-size: 50px;
+	 font-family: sans-serif;
+
+}
+
+.container ul{
+	list-style: none;
+}
+.container ul li{
+	background: #000;
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 20px;
+}
+.container ul li.active{
+	background: lime;
+	color: white;
+}
+.container ul li span{
+	float: right;
+}
+.total{
+	border-top: 2px solid blue;
+	padding: 10px;
+}
+
+.total h1 span{
+	float: right;
+}

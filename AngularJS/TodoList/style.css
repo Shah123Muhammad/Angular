@@ -1,0 +1,38 @@
+.container{
+	background-color: pink;
+	width: 500px;
+	margin: auto;
+	padding-bottom:10px;
+
+}
+h1{
+	background: limegreen;
+	text-align: center;
+	color: white;
+}
+.container ul{
+	list-style: none;
+}
+.container ul li{
+	font-size: 26px;
+	font-weight: bold;
+	padding: 10px;
+	cursor:pointer;
+}
+
+input[type="text"]{
+	padding: 10px;
+	font-size: 20px;
+	border:none;
+	margin-left: 30px;
+	margin-right: 0px;
+}
+input[type="button"]{
+	padding: 10px;
+	font-size: 20px;
+	border:none;
+	margin-left: 0px;
+	background-color: limegreen;
+	padding-left:20px;
+	padding-right: 20px; 
+}

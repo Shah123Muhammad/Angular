@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <title>Custom Service</title>
+  <script src="../angular.js"></script>
+  <script src="Jscript.js"></script>
+  <script src="StringService.js"></script>
+  <style>
+    table{
+      border-collapse: collapse;
+    }
+    td{
+      border:1px solid black;
+      padding: 5px;
+    }
+
+  </style>
+</head>
+<body>
+   <table>
+      <tr>
+        <td>Your String</td>
+        <td><input type="text" ng-model="input"></td>
+      </tr>
+      <tr>
+         <td>Result</td>
+         <td><input type="text" ng-model="output"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="button" ng-click="transformString(input)" value="Process String"></td>
+      </tr>
+   </table>
+</body>
+</html>

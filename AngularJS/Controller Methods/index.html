@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Controller Example</title>
+    <script src="../angular.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+   <div ng-app="myApp" ng-controller="myCtr">
+    First Name:<input type="text" ng-model="FirstName">
+    <br><br>
+    Last Name:<input type="text" ng-model="LastName">
+    <br>
+    <br>
+    FullName:{{fullName()}}
+
+    <!--FullName:{{FirstName+" "+LastName}}-->
+       
+   </div>
+
+</body>
+</html>

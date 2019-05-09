@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>   
+    <title>Accordian Example</title>
+    <!--<script src="angular.js"></script>-->
+   <!-- <script src="script.js"></script>-->
+    <style>
+        
+        button.accordion{
+            background-color: #eee;
+            color:#444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align:left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        button.accordion.active, button.accordion:hover{
+            background-color: #ddd;
+        }
+
+        button.accordion:after{
+           content:'\02795';
+           font-size:13px;
+           color:#777;
+           float:right;
+           margin-left: 5px;
+
+        }
+
+        button.accordion.active:after{
+            content: "\2796";
+        }
+
+        div.panel{
+            padding:0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition:0.6s ease-in-out;
+            opacity: 0;
+        }
+
+        div.panel.show{
+            opacity: 1;
+            max-height: 500px;
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <h2>Accordian Example</h2>
+
+    <p>In this example we have added a plus operator when the user clicks the plus operator it gets changed to the minus operator.</p>
+
+    <button class=accordion">Tiger</button>
+    <div class="panel">
+        <p>The Tiger is the largest cat species, most recognisable for their pattern of dark vertical stripes on reddish orange fur with a lighter underside.</p>
+    </div>
+
+    <button class=accordion">Lion</button>
+    <div class="panel">
+        <p>The lion is one of the big cats in the genus panthera and a member of the Felidae. The commonly used term African lion collectively denots the subspecies in Africa.</p>
+    </div>
+
+    <button class=accordion">Cheetah</button>
+    <div class="panel">
+        <p>The cheetah, also known as hunting leopard, is a big cat that occurs mainly in eastern and southern Africa and few parts of Iran.</p>
+    </div>
+
+
+<script>
+       var acc=document.getElementsByClassName("accordion");
+       var i;
+
+     for(i=0; i<acc.length;i++){
+        acc[i].onclick=function(){
+        this.classList.toggle("active");
+         this.nextElementSibling.classList.toggle("show");
+        }
+     }
+</script>  
+
+</body>
+</html>

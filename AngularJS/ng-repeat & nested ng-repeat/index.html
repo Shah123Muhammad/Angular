@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-App="myApp">
+<head>
+   
+    <title>Example</title>
+    <script src="../angular.js"></script>
+    <script src="script.js"></script>
+
+</head>
+<body ng-controller="myCtr">
+<!------------------------FOR SINGLE NG-REPEAT------------------------>
+ <!--<table>
+     <thead>
+         <tr>
+             <th>FirstName</th>
+             <th>LastName</th>
+             <th>Age</th>
+             <th>City</th>
+         </tr>
+     </thead> 
+    <tbody>
+      <tr ng-repeat="employee in employees">
+           <td>{{employee.firstName}}</td> 
+           <td>{{employee.lastName}}</td> 
+           <td>{{employee.Age}}</td> 
+           <td>{{employee.city}}</td>
+     </tr>
+   </tbody>
+
+ </table>
+-->
+
+
+<!--------------------FOR NESTED NG-REPEAT--------------->
+
+
+ <ul>
+    <li ng-repeat="country in countries">
+        {{country.name}} - Index {{$index}}
+        <ul>
+          <li ng-repeat="city in country.cities" ng-init="parentIndex=$index">
+              {{city.name}} -Parent Index={{ parentIndex }}, Index={{$index}}                 <!--Parent Index={{$parent.$index}}-->
+          </li>
+         </ul>   
+    </li>
+ </ul>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>Example</title>
+	<script src="angular.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+ <div ng-controller="myCtr">
+
+    <div>
+    	Name:{{ country.name }}
+    </div>
+
+    <div>
+    	Capiatl:{{ country.capital }}
+    </div>
+
+    <div>
+        <img ng-src="{{ country.flag }}" alt="{{ country.name + ' Flag '}}" style="height: 100px; width: 200px">
+    </div>
+
+ 	 
+ </div>
+</body>
+</html>

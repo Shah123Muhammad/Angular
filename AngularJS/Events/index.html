@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="mod">
+<head>
+	<title>Example</title>
+	<script src="../angular.js"></script>
+	<script src="module.js"></script>
+</head>
+<body>
+  
+<div ng-controller="ctr">
+
+  <!--  <h1 ng-mousemove="count = count + 1">Mouse over me!</h1>-->
+
+  <!--	<button ng-click="myFunction()">Click ME!!</button>-->
+
+<!--
+    <button ng-click="myfunction()">Click me!!</button>
+     <div ng-show="showMe">
+     	 <h1>Menu:</h1>
+     	 <div>C++</div>
+     	 <div>Java</div>
+     	 <div>Javascript</div>
+     	 <div>PHP</div>
+     </div>	
+  -->
+
+
+   <h1 ng-mousemove="myfunction($event)">Mouse over ME!!</h1>
+    <p>Coordinates:{{x+','+y}}</p>
+
+
+
+
+</div>
+</body>
+</html>

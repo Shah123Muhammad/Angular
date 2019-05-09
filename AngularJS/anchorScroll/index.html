@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <title>AnchorScroll</title>
+  <script src="../angular.js"></script>
+  <script src="Jscript.js"></script>
+  <style>
+    div{
+        width: 400px;
+        border: 1px solid black;
+        font-family: Arial;
+        font-size: large;
+        padding: 5px;
+    }
+  </style>
+</head>
+<body ng-controller="myCtr">
+  <button id="top" ng-click="scrollTo('bottom')">Go to bottom of the page</button>
+  <br><br>
+  
+  <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum metus et magna  fringilla, id imperdiet urna iaculis. Pellentesque cursus sed erat eget dapibus.
+     <br><br>
+      Aliquam eu turpis velit. Nunc felis leo, porta feugiat hendrerit dignissim, pulvinar sed purus. Praesent ut purus a sapien tempor placerat. Morbi eu arcu nunc. 
+      <br><br>
+      Maecenas magna ante, suscipit luctus feugiat et, aliquam imperdiet tellus. Sed dictum nunc non finibus luctus. Aliquam sit amet tortor a arcu vehicula interdum a eu leo.
+
+      Suspendisse efficitur, tortor at varius aliquam, nulla odio finibus magna, tristique faucibus quam erat sed urna. Ut eleifend ornare erat, nec lacinia orci sollicitudin vitae.
+      <br><br>
+       In eget odio turpis. Vestibulum a neque dictum, efficitur magna eu, tincidunt dui. Vestibulum ornare metus at ante auctor, a porttitor nulla egestas. Praesent sollicitudin ultrices aliquet. 
+       <br><br> 
+       Cras erat nulla, convallis sed congue vel, finibus vitae nulla. Morbi aliquam mi at ligula dapibus tincidunt. Nunc at varius nibh, in tristique est. Fusce maximus dapibus mauris at volutpat. 
+        <br><br>
+       Morbi et ipsum sed diam blandit egestas quis pretium augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+         <br><br>
+       Curabitur dapibus, ligula nec auctor molestie, libero diam vehicula neque, vel suscipit sapien mauris et ipsum. Pellentesque eleifend sagittis diam, vitae feugiat mauris pulvinar vel.
+  </div>
+
+  <br><br>
+  <button id="bottom" ng-click="scrollTo('top')">Go to top of the page</button>
+</body>
+</html>

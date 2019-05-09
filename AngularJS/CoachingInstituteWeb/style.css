@@ -1,0 +1,84 @@
+.container{
+	width: 70%;
+	margin: auto;
+
+}
+
+.header{
+	background: #36D1DC; 
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  
+    background: linear-gradient(to right, #5B86E5, #36D1DC); 
+    height: 200px;
+
+}
+
+#title{
+	color:#fff;
+	text-align: center;
+	font-size: 50px;
+    padding-top: 75px;
+}
+
+.sidebar{
+	width: 30%;
+	background: lightblue;
+	height: 500px;
+	float: left;
+}
+.sidebar ul{
+	margin:0px;
+	list-style: none;
+}
+.sidebar ul li{
+ 	padding: 10px;
+ 	font-size: 20px;
+ 	font-weight: bold;
+
+}
+.sidebar ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+.sidebar ul li a:hover{
+	color:black;
+}
+
+.content_area{
+	float: left;
+	width: 70%;
+	height: 500px;
+	background: lime;
+}
+
+.courses{
+
+
+
+}
+
+.courses ul{
+	list-style: disc;
+}
+
+.courses ul li{
+	padding:10px;
+	font-size: 20px;
+}
+.staff table{
+    border: 2px solid black;
+    border-collapse:collapse;
+    text-align: center;
+    margin:auto;
+}
+.staff table th,td,tr{
+	padding:10px;
+	border: 2px solid black;
+}
+input{
+	width: 200px;
+	padding:10px;
+	font-size: 20px;
+	border: none;
+	border-radius: 5px;
+	
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>Array Sorting</title>
+	<script src="../angular.js"></script>
+	<script src="module.js"></script>
+</head>
+<body>
+   
+    <div ng-controller="myCtr">
+    	<table border="1" width="80%">
+    		<tr>
+    			<th ng-click="orderByMe('name')">Name</th>
+    			<th ng-click="orderByMe('country')">Age</th>
+    		</tr>
+    		<tr ng-repeat="x in names | orderBy:myOrderBy">
+    			<td>{{x.name}}</td>
+    			<td>{{x.age}}</td>
+    		</tr>
+    	</table>
+    </div>
+
+</body>
+</html>
